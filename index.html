@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manoj Kumar Y- Java Full-Stack Developer</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Google Fonts - Inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+        <style>
+        /* Apply the font to the whole document */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Custom class for the hero text gradient */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+    </head>
+
+    <body class="bg-gray-900 text-gray-200 leading-relaxed">
+
+        <!-- Header & Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full bg-gray-900/80 backdrop-blur-md shadow-md shadow-gray-900/50">
+            <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <!-- Logo / Name -->
+                    <div class="flex-shrink-0">
+                        <a href="#home"
+                            class="text-2xl font-bold text-white">Manoj Kumar
+                            Y</a>
+                    </div>
+
+                    <!-- Desktop Navigation Links -->
+                    <div class="hidden md:flex md:items-center md:space-x-8">
+                        <a href="#contacts"
+                            class="text-gray-300 hover:text-blue-400 transition-colors duration-300">About</a>
+                        <a href="#skills"
+                            class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Skills</a>
+                        <a href="#projects"
+                            class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Projects</a>
+                        <a href="#contact"
+                            class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Button (optional, for simplicity we'll focus on scroll) -->
+                    <div class="md:hidden">
+                        <a href="#contact"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+
+            <!-- Hero Section -->
+            <section id="home" class="relative pt-32 pb-20 md:pt-48 md:pb-32">
+                <div
+                    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+                    <div class="md:w-3/4 lg:w-2/3">
+                        <h1
+                            class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4">
+                            <span class="block text-white">Hi, I'm</span>
+                            <span
+                                class="block text-gradient bg-gradient-to-r from-blue-400 to-purple-500">Manoj
+                                Kumar Y</span>
+                        </h1>
+                        <p
+                            class="text-2xl md:text-3xl font-medium text-gray-300 mt-4">Java
+                            Full-Stack Developer</p>
+                        <p
+                            class="mt-6 text-lg text-gray-400 max-w-2xl mx-auto md:mx-0">
+                            I build robust, scalable, and modern web
+                            applications, transforming complex problems into
+                            elegant solutions from the backend logic to the
+                            frontend design.
+                        </p>
+                        <div
+                            class="mt-10 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                            <a href="#projects"
+                                class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 shadow-lg">
+                                View My Projects
+                            </a>
+                            <a href="#contact"
+                                class="inline-flex items-center justify-center px-8 py-3 border border-gray-600 text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 transition-all duration-300">
+                                Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contacts" class="py-20 md:py-32 bg-gray-800">
+                <!-- Changed background for visual separation -->
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                        <div>
+                            <h2
+                                class="text-3xl md:text-4xl font-extrabold text-white mb-6">
+                                About Me
+                            </h2>
+                            <p class="text-lg text-gray-300 mb-4">
+                                Hello! I'm Manoj Kumar Y, a passionate developer
+                                with a strong foundation in Java and full-stack
+                                technologies. I recently completed my Java
+                                Full-Stack course by Tutorsdude and I'm eager to
+                                apply my knowledge to build impactful
+                                applications.
+                            </p>
+                            <p class="text-lg text-gray-300 mb-4">
+                                I thrive on problem-solving and enjoy the
+                                challenge of designing and implementing both the
+                                intricate backend logic with Spring Boot and the
+                                dynamic, user-friendly interfaces with
+                                frameworks like React.
+                            </p>
+                            <p class="text-lg text-gray-300">
+                                My goal is to join a collaborative team where I
+                                can contribute to meaningful projects, continue
+                                to learn, and grow as a developer.
+                            </p>
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="./profile.jpg"
+                                alt="A placeholder for your profile picture"
+                                class="rounded-full shadow-2xl object-cover w-64 h-64 md:w-80 md:h-80"
+                                onerror="this.src='https://placehold.co/400x400/334155/e2e8f0?text=Image+Error'" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="py-20 md:py-32 bg-gray-900">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold text-white text-center mb-16">
+                        My Technical Skills
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                        <!-- Backend Skills Card -->
+                        <div
+                            class="bg-gray-800 p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                            <div
+                                class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white mb-6">
+                                <!-- SVG Icon for Backend (Server) -->
+                                <svg class="h-6 w-6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                                </svg>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-white mb-4">Backend</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>• Java & Core Java</li>
+                                <li>• Spring Boot</li>
+                                <li>• Spring Security</li>
+                                <li>• REST APIs</li>
+                                <li>• Hibernate / JPA</li>
+                                <li>• Microservices (Basic)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Frontend Skills Card -->
+                        <div
+                            class="bg-gray-800 p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                            <div
+                                class="flex items-center justify-center h-12 w-12 rounded-full bg-green-600 text-white mb-6">
+                                <!-- SVG Icon for Frontend (Desktop) -->
+                                <svg class="h-6 w-6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M9.75 17L9 12.5M9 12.5L14.25 17M9 12.5L14 7.5M14 7.5L14.25 17M14 7.5L9.75 3" />
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+                                </svg>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-white mb-4">Frontend</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>• React.js</li>
+                                <li>• JavaScript (ES6+)</li>
+                                <li>• HTML5</li>
+                                <li>• CSS3 / SASS</li>
+                                <li>• Tailwind CSS</li>
+                                <li>• Responsive Design</li>
+                            </ul>
+                        </div>
+
+                        <!-- Database Skills Card -->
+                        <div
+                            class="bg-gray-800 p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                            <div
+                                class="flex items-center justify-center h-12 w-12 rounded-full bg-yellow-600 text-white mb-6">
+                                <!-- SVG Icon for Database -->
+                                <svg class="h-6 w-6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M4 7v10m16-10v10M4 13h16M4 7a2 2 0 012-2h12a2 2 0 012 2M4 17a2 2 0 002 2h12a2 2 0 002-2" />
+                                </svg>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-white mb-4">Databases</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>• MySQL</li>
+                                <li>• PostgreSQL</li>
+                                <li>• MongoDB</li>
+                                <li>• H2 (for testing)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Tools & DevOps Card -->
+                        <div
+                            class="bg-gray-800 p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                            <div
+                                class="flex items-center justify-center h-12 w-12 rounded-full bg-purple-600 text-white mb-6">
+                                <!-- SVG Icon for Tools -->
+                                <svg class="h-6 w-6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.573-1.066z" />
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4">Tools
+                                & DevOps</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>• Git & GitHub</li>
+                                <li>• Docker (Basic)</li>
+                                <li>• Jenkins (Basic)</li>
+                                <li>• Postman / Insomnia</li>
+                                <li>• Maven / Gradle</li>
+                                <li>• JUnit / Mockito</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="py-20 md:py-32 bg-gray-800">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold text-white text-center mb-16">
+                        Featured Projects
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        <!-- Project Card 1 -->
+                        <div
+                            class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                            <img src="./task-tracker-image.png"
+                                alt="Screenshot of Project 1"
+                                class="w-full h-48 object-cover"
+                                onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Image+Error'">
+                            <div class="p-6">
+                                <h3
+                                    class="text-2xl font-bold text-white mb-2">Full-Stack
+                                    Task Tracker</h3>
+                                <p class="text-gray-400 mb-4">
+                                    A foundational application demonstrating
+                                    end-to-end data flow using a RESTful API.
+                                    This project showcases proficiency with the
+                                    modern Java ecosystem.
+                                </p>
+                                <ul class="text-gray-400 mb-4">
+                                    <li>Backend: Java, Spring Boot, Spring
+                                        Data JPA.</li>
+                                    <li>Database: PostgreSQL
+                                        integration.</li>
+                                    <li>Frontend: Vanilla JavaScript and API
+                                        consumption.</li>
+                                    <li>Feature: Full CRUD (Create, Read,
+                                        Update, Delete) functionality.</li>
+                                </ul>
+
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span
+                                        class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Java</span>
+                                    <span
+                                        class="bg-green-900 text-green-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Spring
+                                        Boot</span>
+                                    <span
+                                        class="bg-yellow-900 text-yellow-300 text-xs font-medium px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+                                    <span
+                                        class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML/Vanila
+                                        JavaScript</span>
+                                </div>
+                                <div class="flex gap-4">
+                                    <a href="#"
+                                        class="inline-flex items-center text-gray-300 hover:text-white font-medium">
+                                        <!-- GitHub SVG -->
+                                        <svg class="h-5 w-5 mr-2"
+                                            fill="currentColor"
+                                            viewBox="0 0 24 24"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.8c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.003 10.003 0 0022 12c0-5.523-4.477-10-10-10z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        GitHub
+                                    </a>
+                                    <a href="./task_tracker_frontend.html"
+                                        class="inline-flex items-center text-gray-300 hover:text-white font-medium">
+                                        <!-- Live Demo SVG -->
+                                        <svg class="h-5 w-5 mr-2"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                            <img src="/images/fx.png"
+                                alt="Screenshot of Project 2"
+                                class="w-full h-48 object-cover"
+                                onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Image+Error'">
+                            <div class="p-6"> <h3
+                                    class="text-2xl font-bold text-white mb-2">Full-Stack
+                                    Currency Exchange Rate Service</h3> <p
+                                    class="text-gray-400 mb-4"> A robust,
+                                    cloud-deployed full-stack application for
+                                    converting currency amounts using up-to-date
+                                    exchange rates. <ul
+                                        class="text-gray-400 mb-4"> <li>Backend:
+                                            Java 21, Spring Boot 3</li>
+                                        <li>Backend Hosting: Render (Container
+                                            Service)</li> <li>Database:
+                                            PostgreSQL (Hosted on Render)</li>
+                                        <li>Frontend: HTML5, CSS (Tailwind CSS),
+                                            JavaScript</li> </ul> </p> <div
+                                    class="flex flex-wrap gap-2 mb-6"> <span
+                                        class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Java</span>
+                                    <span
+                                        class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Spring
+                                        Boot</span> <span
+                                        class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">REST
+                                        API</span> <span
+                                        class="bg-purple-900 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Docker</span>
+                                    <span
+                                        class="bg-yellow-900 text-yellow-300 text-xs font-medium px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+                                </div> <div class="flex gap-4"> <a
+                                        href="https://github.com/Manojkumar0721/fx-rate-service"
+                                        class="inline-flex items-center text-gray-300 hover:text-white font-medium">
+                                        <svg class="h-5 w-5 mr-2"
+                                            fill="currentColor"
+                                            viewBox="0 0 24 24"
+                                            aria-hidden="true"><path
+                                                fill-rule="evenodd"
+                                                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.8c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.003 10.003 0 0022 12c0-5.523-4.477-10-10-10z"
+                                                clip-rule="evenodd" /></svg>
+                                        GitHub </a> <a
+                                        href="https://fx-rate-service.vercel.app/"
+                                        class="inline-flex items-center text-gray-300 hover:text-white font-medium">
+                                        <!-- Live Demo SVG --> <svg
+                                            class="h-5 w-5 mr-2"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor"> <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg> Live Demo </a> </div> </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div
+                            class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                            <img
+                                src="https://placehold.co/600x400/334155/e2e8f0?text=Project+3+Screenshot"
+                                alt="Screenshot of Project 3"
+                                class="w-full h-48 object-cover"
+                                onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Image+Error'">
+                            <div class="p-6">
+                                <h3
+                                    class="text-2xl font-bold text-white mb-2">[Project
+                                    Title 3]</h3>
+                                <p class="text-gray-400 mb-4">
+                                    [Short, compelling description of your
+                                    project. What problem does it solve?
+                                    What does it do?]
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span
+                                        class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Spring
+                                        Boot</span>
+                                    <span
+                                        class="bg-purple-900 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Docker</span>
+                                    <span
+                                        class="bg-yellow-900 text-yellow-300 text-xs font-medium px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+                                </div>
+                                <div class="flex gap-4">
+                                    <a href="#"
+                                        class="inline-flex items-center text-gray-300 hover:text-white font-medium">
+                                        <svg class="h-5 w-5 mr-2"
+                                            fill="currentColor"
+                                            viewBox="0 0 24 24"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.8c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.003 10.003 0 0022 12c0-5.523-4.477-10-10-10z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        GitHub
+                                    </a>
+                                    <a href="#"
+                                        class="inline-flex items-center text-gray-300 hover:text-white font-medium">
+                                        <svg class="h-5 w-5 mr-2"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-20 md:py-32 bg-gray-900">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                        <!-- Contact Info -->
+                        <div>
+                            <h2
+                                class="text-3xl md:text-4xl font-extrabold text-white mb-6">
+                                Get In Touch
+                            </h2>
+                            <p class="text-lg text-gray-300 mb-8">
+                                I'm currently open to new opportunities and
+                                would love to hear from you. Whether you
+                                have a question, a project idea, or just
+                                want to connect, feel free to reach out!
+                            </p>
+                            <div class="space-y-6">
+                                <a href="mailto:manu07y@gmail.com"
+                                    class="flex items-center group">
+                                    <!-- Email SVG -->
+                                    <svg
+                                        class="h-6 w-6 text-gray-400 group-hover:text-blue-400 transition-colors duration-300"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                    <span
+                                        class="ml-4 text-lg text-gray-300 group-hover:text-blue-400 transition-colors duration-300">manu07y@gmail.com</span>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/manojkumar0721/"
+                                    class="flex items-center group">
+                                    <!-- Replace # with your LinkedIn URL -->
+                                    <!-- LinkedIn SVG -->
+                                    <svg
+                                        class="h-6 w-6 text-gray-400 group-hover:text-blue-400 transition-colors duration-300"
+                                        fill="currentColor" viewBox="0 0 24 24"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75 1.75.783 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                    <span
+                                        class="ml-4 text-lg text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Linkedin</span>
+                                </a>
+                                <a href="https://github.com/Manojkumar0721"
+                                    class="flex items-center group">
+                                    <!-- Replace # with your GitHub URL -->
+                                    <!-- GitHub SVG -->
+                                    <svg
+                                        class="h-6 w-6 text-gray-400 group-hover:text-blue-400 transition-colors duration-300"
+                                        fill="currentColor" viewBox="0 0 24 24"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.8c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.003 10.003 0 0022 12c0-5.523-4.477-10-10-10z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span
+                                        class="ml-4 text-lg text-gray-300 group-hover:text-blue-400 transition-colors duration-300">GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form (Example) -->
+                        <div>
+                            <form
+                                action="https://formsubmit.co/manu07y@gmail.com"
+                                method="POST" class="space-y-6">
+                                <div>
+                                    <label for="name" class="sr-only">Your
+                                        Name</label>
+                                    <input type="text" name="name" id="name"
+                                        placeholder="Your Name" required
+                                        class="w-full px-4 py-3 rounded-md bg-gray-800 border-gray-700 text-gray-200 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="sr-only">Your
+                                        Email</label>
+                                    <input type="email" name="email" id="email"
+                                        placeholder="Your Email" required
+                                        class="w-full px-4 py-3 rounded-md bg-gray-800 border-gray-700 text-gray-200 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="message" class="sr-only">Your
+                                        Message</label>
+                                    <textarea name="message" id="message"
+                                        rows="5" placeholder="Your Message"
+                                        required
+                                        class="w-full px-4 py-3 rounded-md bg-gray-800 border-gray-700 text-gray-200 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit"
+                                        class="w-full inline-flex justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 border-t border-gray-800">
+            <div
+                class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2025 Manoj Kumar Y. All rights reserved.
+                </p>
+                <p class="text-gray-500 text-sm mt-2">
+                    Built with <span class="text-red-500">&hearts;</span>
+                    and Tailwind CSS
+                </p>
+            </div>
+        </footer>
+
+        <!-- Smooth Scroll JavaScript -->
+        <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+    </body>
+
+</html>
